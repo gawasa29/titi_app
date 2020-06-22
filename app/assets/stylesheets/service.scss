@@ -10,7 +10,7 @@
     max-width: 1200px;
     margin: 0 auto;
     margin-bottom: 30px;
-    margin-top: 30px;
+    margin-top: 13px;
     border-bottom: 3px dashed #888;
   }
   .serviceTitle h1{
@@ -21,6 +21,7 @@
     color: #555;
     background-color: #cfcfcf;
     padding: 18px 0;
+    font-size: 20px;
   }
   /*section1*/
   .serviceContent{
@@ -46,6 +47,9 @@
     word-wrap: normal;
     width: 28%;
     text-align: center;
+  }
+  .ContentMesseage h2{
+    font-size: 20px;
   }
   .ContentList{
     text-align: right;

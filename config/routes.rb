@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root 'home#top'
-  get 'contact/contact_page'=>"order#order_page"
+  get 'contact/contact_page'=>"contact#contact_page"
   get 'overview/over_page'=>"overview#over_page"
   get 'order/order_page'=>"order#order_page"
   get 'service/service_page'=>"service#service_page"
