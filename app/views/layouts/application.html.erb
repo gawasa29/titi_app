@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<html>
+  <head>
+    <title>掃除の事なら！サクラプランニング</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css"
+        rel="stylesheet">
+        <script type="text/javascript" src="style.js"></script>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+  <header>
+  <div class="headerTop">
+    <%= link_to image_tag('logo.png',class:"logo"), 'home/top' %>
+    <p class="headerTitle">あなたのお部屋も心も綺麗に。</p>
+    <address class="headerContact"><span class="tell">072-432-2212</span>
+    <br>受付時間:AM0:00〜PM23:59</address>
+  </div>
+    <nav class="header-menu">
+    <ul class="menu">
+      <li><%= link_to "/home/top" do %>
+        <i class="fas fa-home"></i> ホーム
+      <% end %></li>
+      <li><%= link_to "/service/service_page" do %>
+        サービス<i class="fas fa-angle-right"></i>
+      <% end %>
+        <ul>
+          <div class="sub">
+          <li><%= link_to('ハウスクリーニング','#')%></li>
+          <li><%= link_to('ビルクリーニング','#')%></li>
+          <li><%= link_to('木部灰汁洗い','#')%></li>
+          <li><%= link_to('エアコンクリーニング','#')%></li>
+          </div>
+        </ul>
+      </li>
+      <li><%= link_to('ご注文の流れ','/order/order_page')%></li>
+      <li><%= link_to('お問い合わせ','/contact/contact_page')%></li>
+      <li><%= link_to('会社概要','/overview/over_page')%></li>
+      </ul>
+      </nav>
+  </header>
+    <%= yield %>
+    </div>
+    <footer>
+      <div class="footer-body">
+        <div class="footerTop">
+          <div class="txtTop"><%= link_to image_tag('logo.png',class:"logo"), 'home/top' %></div>
+          <p class="txtBottom">ー　あなたのお部屋も心も綺麗に　ー</p>
+        </div>
+        <address class="footerAddress">072-432-2212</address>
+        <div class="footerList">
+          <ul>
+            <li><%= link_to('ホーム','/home/top')%></li>
+            <li><%= link_to('サービス','/service/service_page')%></li>
+            <li><%= link_to('ご注文の流れ','/order/order_page')%></li>
+            <li><%= link_to('お問い合わせ','/contact/contact_page')%></li>
+            <li><%= link_to('会社概要','/overview/over_page')%></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+@media only screen and (max-width: 768px){
+.company{
+width:100%;
+margin:2em auto;
+border:rgba(0,0,0,1) 2px solid;
+border-collapse:collapse;
+}
+
+.company th{
+padding:3px;
+display:block;
+background-color: rgb(194, 194, 194);
+text-align:center;
+text-shadow: 1px 1px 0 rgba(0,0,0,1),
+             -1px 1px 0 rgba(0,0,0,1),
+             1px -1px 0 rgba(0,0,0,1),
+             -1px -1px 0 rgba(0,0,0,1);
+  color: white;
+}
+.company td{
+padding:3px;
+display:block;
+text-align:center;
+}
+}
+/*--------PC用--------*/
+@media only screen and (min-width: 769px) {
+.company{
+width:100% ;
+max-width: 1200px;
+margin:200px auto;
+border: black 2px solid;
+border-collapse:collapse;
+}
+.listbody{
+  padding-top: 100px;
+}
+.company th{
+width:40%;
+padding: 10px 0;
+display:table-cell;
+text-align: center;
+background-color: rgb(194, 194, 194);
+border-bottom:rgba(0,0,0,1)  2px solid;
+color: white;
+text-shadow: 1px 1px 0 rgba(0,0,0,1),
+             -1px 1px 0 rgba(0,0,0,1),
+             1px -1px 0 rgba(0,0,0,1),
+             -1px -1px 0 rgba(0,0,0,1);
+}
+.company td{
+width:60%;
+padding: 10px 0;
+display:table-cell;
+text-align: center;
+border-bottom: rgba(0,0,0,1)  2px solid;
+
+}
+}

@@ -1,0 +1,59 @@
+
+  /*service*/
+  .container{
+    padding-top: 180px;
+  }
+  .section0,.section1,.section2,.section3{
+    margin: 0 0 60px 0;
+  }
+  .serviceTitle{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-bottom: 3px dashed #888;
+  }
+  .serviceTitle h1{
+    margin: 0;
+    border-top: 3px solid #888;
+    letter-spacing:-2px;
+    font-weight: 600;
+    color: #555;
+    background-color: #cfcfcf;
+    padding: 18px 0;
+  }
+  /*section1*/
+  .serviceContent{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    border-top: 5px dotted #d81b60;
+    margin-bottom: 20px;
+  }
+  .content,.ContentMesseage,.ContentList{
+    display: inline-block;
+    vertical-align: middle;
+
+  }
+  .content{
+    padding-right: 50px;
+    
+  }
+  .content img{
+    
+  }
+  .ContentMesseage{
+    word-wrap: normal;
+    width: 28%;
+    text-align: center;
+  }
+  .ContentList{
+    text-align: right;
+    font-weight: 600;
+    float: right;
+  }
+  .ContentList ul{
+    margin: 0;
+    padding: 0;
+  }
+  

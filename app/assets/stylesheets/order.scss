@@ -1,0 +1,45 @@
+.orderContainer{
+    padding-top: 180px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .orderTitle{
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+  .orderTitle h1{
+    border-top: 3px solid #888;
+    background-color: #cfcfcf;
+    padding: 18px 0;
+    font-weight: 600;
+    letter-spacing:-2px;
+    border-bottom: 3px dashed #888;
+    color:#555;
+  }
+  .Steps1 h2{
+    font-size: 30px;
+    border-bottom: solid 2px #d81b60;
+    background-color: #d81b60;
+    color: #fff;
+    margin-bottom: 0;
+  }
+  .Steps1 h2 span{
+    color: white;
+    margin:0 10px;
+  }
+  .stepOne,.stepTwo{
+    border: double 2px #d81b60;
+  }
+  .stepOne p,.stepTwo p{
+    margin: 50px 0;
+    text-align: center;
+  }
+  .step1img{
+    float: right;
+    position: relative;
+    right: 90px;
+    bottom: 30px;
+  }
+  .box{
+    margin-bottom: 50px;
+  }
