@@ -13,7 +13,9 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
+  <%= javascript_include_tag 'demo_js' %>
   <header>
+  <div class="pc">
   <div class="headerTop">
     <%= link_to image_tag('logo.png',class:"logo"), 'home/top' %>
     <p class="headerTitle">あなたのお部屋も心も綺麗に。</p>
@@ -42,6 +44,29 @@
       <li><%= link_to('会社概要','/overview/over_page')%></li>
       </ul>
       </nav>
+    </div>
+
+
+
+    <div class="tablet">
+    <div class="headerTop">
+    <%= link_to image_tag('logo.png',class:"logo"), 'home/top' %>
+    <address class="headerContact"><span class="tell">072-432-2212</span></address>
+    </div>
+    <nav class="tabletMenu">
+      <ul>
+      <li><%= link_to('ホーム',"/home/top")%></li>
+      <li><%= link_to('サービス',"/service/service_page")%></li>
+      <li><%= link_to('ご注文の流れ','/order/order_page')%></li>
+      <li><%= link_to('お問い合わせ','/contact/contact_page')%></li>
+      <li><%= link_to('会社概要','/overview/over_page')%></li>
+      </ul>
+      </nav>
+    <div class="navToggle">
+    <span></span><span></span><span></span>
+    </div>
+    </div>
+    
   </header>
     <%= yield %>
     </div>
