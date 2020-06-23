@@ -1,5 +1,11 @@
-$(function(){
-    $(document).ready(function() {
-        $("p").text("jQuery稼働テスト(稼働中)");
-      });
+$(function() {
+    $('.navToggle').click(function() {
+        $(this).toggleClass('active');
+
+        if ($(this).hasClass('active')) {
+            $('.tabletMenu').addClass('active');
+        } else {
+            $('.tabletMenu').removeClass('active');
+        }
+    });
 });

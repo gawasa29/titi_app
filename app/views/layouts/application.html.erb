@@ -2,6 +2,7 @@
 <html lang="ja" dir="ltr">
 <html>
   <head>
+  
     <title>掃除の事なら！サクラプランニング</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,13 +12,14 @@
         rel="stylesheet">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'demo_js' %>
   </head>
   <body>
-  <%= javascript_include_tag 'demo_js' %>
+  <%=javascript_include_tag 'demo_js' %>
   <header>
   <div class="pc">
   <div class="headerTop">
-    <%= link_to image_tag('logo.png',class:"logo"), 'home/top' %>
+    <%= link_to image_tag('logo.png',class:"logo"), '/home/top' %>
     <p class="headerTitle">あなたのお部屋も心も綺麗に。</p>
     <address class="headerContact"><span class="tell">072-432-2212</span>
     <br>受付時間:AM0:00〜PM23:59</address>
@@ -53,6 +55,9 @@
     <%= link_to image_tag('logo.png',class:"logo"), 'home/top' %>
     <address class="headerContact"><span class="tell">072-432-2212</span></address>
     </div>
+    <div class="navToggle">
+    <span></span><span></span><span></span>
+    </div>
     <nav class="tabletMenu">
       <ul>
       <li><%= link_to('ホーム',"/home/top")%></li>
@@ -62,9 +67,6 @@
       <li><%= link_to('会社概要','/overview/over_page')%></li>
       </ul>
       </nav>
-    <div class="navToggle">
-    <span></span><span></span><span></span>
-    </div>
     </div>
     
   </header>
