@@ -8,7 +8,6 @@
     display: none;
   }
   .orderTitle{
-    font-size: 10px;
     background-color: #cfcfcf;
     border-top: 2px solid #888;
     border-bottom: 2px dashed #888;
@@ -17,6 +16,8 @@
   }
   .orderTitle h1{
     margin: 10px 0;
+    font-size: 17px;
+    color:#555;
   }
   .box{
     margin-bottom: 50px;
@@ -70,7 +71,7 @@
     font-size: 20px;
   }
   .Steps1 h2{
-    font-size: 30px;
+    font-size: 20px;
     border-bottom: solid 2px #d81b60;
     background-color: #d81b60;
     color: #fff;

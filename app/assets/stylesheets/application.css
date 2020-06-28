@@ -42,7 +42,7 @@ li{
   font-size: 1.1em;
     padding: 0;
     width: 100%;
-    border-bottom: 2px dotted white;
+    border-bottom: 2px solid white;
 }
 .tabletMenu ul li a{
   display: block;
