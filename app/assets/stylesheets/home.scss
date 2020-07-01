@@ -5,11 +5,10 @@
 }
 .section1{
     padding: 0;
-    background-image: url('sakura.jpg');
     height: 500px;
     background-position: center;
     background-size: 50% auto;
-
+    
 }
 .copy1{
     margin-top: 0;
@@ -46,6 +45,18 @@
 }
 /*section1*/
 @media only screen and (min-width: 769px){
+.warpper {
+margin: 0 auto;
+padding: 40px;
+width: 80%;
+color: #333;
+background-color: #419be0;
+}
+.slick-slide {
+text-align: center;
+color: #419be0;
+background: white;
+}
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -54,7 +65,6 @@
 .section1{
     padding: 0;
     margin-top:150px;
-    background-image: url('sakura.jpg');
     height: 500px;
     background-position: center;
     background-size: cover;

@@ -148,7 +148,7 @@ header{
 .headerContact{
   display: inline-block;
   text-align: center;
-  font-size: 80%;
+  font-size: 75%;
   line-height: 1.5;
   position: relative;
   float: right;
@@ -230,34 +230,13 @@ ul.menu i{
   font-size: 20px;
   padding-left: 15px;
 }
-.breadcrumb {
-  list-style: none;
-  padding:0;
-  margin:0 auto;
-  background: #cfcfcf;
+.breadcrumb{
+  width: 1000px;
+  margin: 0 auto;
 }
-.breadcrumb ol{
-  margin:0 auto;
-  max-width: 1200px;
-}
-.breadcrumb li {
-  display: inline;/*横に並ぶように*/
-  list-style: none;
-  font-weight: bold;/*太字*/
-}
-
-.breadcrumb li:after {/* >を表示*/
-  content: '>';
-  padding: 0 0.2em;
-  color: #888;
-}
-.breadcrumb li:last-child:after {
-  content: '';
-}
-
-.breadcrumb li a {
-  text-decoration: none;
-  color: #555;/*色*/
+.breadcrumb a{
+  color:#3c96cf;
+  margin-right: 10px;
 }
 /*--footer--*/
 footer{

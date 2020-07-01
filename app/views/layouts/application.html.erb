@@ -62,9 +62,11 @@
       <li><%= link_to('お問い合わせ','/contact/contact_page')%></li>
       <li><%= link_to('会社概要','/overview/over_page')%></li>
       </ul>
-      </nav>
+    </nav>
     </div>
-    
+    <div class="breadcrumb">
+    <%= render_breadcrumbs separator: '>'%>
+    </div>
   </header>
     <%= yield %>
     </div>
