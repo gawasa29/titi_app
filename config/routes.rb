@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'home#top'
+  root to: 'home#top'
   get 'contact/contact_page'=>"contact#contact_page"
   get 'overview/over_page'=>"overview#over_page"
   get 'order/order_page'=>"order#order_page"
