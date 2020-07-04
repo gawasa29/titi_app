@@ -42,6 +42,9 @@
     font-size: 30px;
     border-bottom :inset 5px #d81b60;
 }
+.breadcrumb{
+    display: none;
+}
 }
 /*section1*/
 @media only screen and (min-width: 769px){
@@ -100,5 +103,8 @@ background: white;
     color: #d81b60;
     font-size: 30px;
     border-bottom :inset 5px #d81b60;
+}
+.breadcrumb{
+    display: none;
 }
 }

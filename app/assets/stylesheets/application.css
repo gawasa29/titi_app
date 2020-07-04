@@ -52,7 +52,7 @@ li{
 .tabletMenu.active {
   transform: translateY(0%);
 }
-.navToggle {
+.navToggle{
   display: block;
   position: fixed;    /* bodyに対しての絶対位置指定 */
   right: 13px;
