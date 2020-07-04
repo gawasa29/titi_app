@@ -64,7 +64,14 @@ li{
   background: #d81b60;
   text-align: center;
 }
+.breadcrumb{
 
+  margin: 0 auto;
+}
+.breadcrumb a{
+  color:#3c96cf;
+  margin-right: 10px;
+}
 .navToggle span {
   display: block;
   position: absolute;    /* .navToggleに対して */
@@ -271,5 +278,8 @@ footer{
   display: block;
   padding: 2px 25px;
   color: #fff;
+}
+.instag i{
+  color: #eee;
 }
 }
