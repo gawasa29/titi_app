@@ -2,7 +2,6 @@
 <html lang="ja" dir="ltr">
 <html>
   <head>
-  
     <title>掃除の事なら！サクラプランニング</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -12,6 +11,8 @@
         rel="stylesheet">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
   </head>
   <body>
   <%= javascript_include_tag 'demo_js' %>
@@ -19,10 +20,9 @@
   <!--PC-->
   <div class="pc">
   <div class="headerTop">
-    <%= link_to image_tag('https://lh5.googleusercontent.com/y1uC18p9S09oYzXgBX8s7WP71A4fe-QYtDRBouAQ1hyG2CIINjlXFvJGgp4ImsertZtyvNEOpP3740do4X3UP3-B-plQ9wx5XwI9Wm0XxThnusRYQHE=w1280',class:"logo"), '/' %>
+    <%= link_to image_tag('https://dotup.org/uploda/dotup.org2192107.png',class:"logo"), '/' %>
     <p class="headerTitle">あなたのお部屋も心も綺麗に。</p>
     <address class="headerContact"><span class="tell">072-432-2212</span>
-    <br>受付時間:AM0:00〜PM23:59</address>
   </div>
     <nav class="header-menu">
     <ul class="menu">
@@ -50,7 +50,7 @@
         <!--tablet-->
     <div class="tablet">
     <div class="headerTop">
-    <%= link_to image_tag('logomini2.png',class:"logo"), '/' %>
+    <%= link_to image_tag('https://dotup.org/uploda/dotup.org2192111.png',class:"logo"), '/' %>
     </div>
     <div class="navToggle">
     <span></span><span></span><span></span>
@@ -74,7 +74,7 @@
     <footer>
       <div class="footer-body">
         <div class="footerTop">
-          <div class="txtTop"><%= link_to image_tag('https://lh5.googleusercontent.com/y1uC18p9S09oYzXgBX8s7WP71A4fe-QYtDRBouAQ1hyG2CIINjlXFvJGgp4ImsertZtyvNEOpP3740do4X3UP3-B-plQ9wx5XwI9Wm0XxThnusRYQHE=w1280',class:"logo"), '/' %></div>
+          <div class="txtTop"><%= link_to image_tag('https://dotup.org/uploda/dotup.org2192107.png',class:"logo"), '/' %></div>
           <p class="txtBottom">ー　あなたのお部屋も心も綺麗に　ー</p>
         </div>
         <address class="footerAddress">072-432-2212</address>
@@ -94,5 +94,6 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   </body>
 </html>

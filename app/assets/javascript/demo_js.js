@@ -7,5 +7,16 @@ $(function() {
         } else {
             $('.tabletMenu').removeClass('active');
         }
+        
     });
+    $(function() {
+        $('.move').not('.slick-initialized').slick({
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            infinite: true,      //無限ループ
+        });
+        
+    });
+    
 });
