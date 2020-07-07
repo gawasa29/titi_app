@@ -10,7 +10,6 @@
     background-size: 50% auto;
     
 }
-
 /*-section2-*/
 .wide{
     max-width: 1200px;
@@ -52,6 +51,9 @@
 }
 .photo{
     width: 100%;
+}
+.photo:hover{
+    opacity: 0.8;
 }
 .slick-prev{
     left: 100px;
