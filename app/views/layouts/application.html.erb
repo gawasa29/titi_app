@@ -2,7 +2,6 @@
 <html lang="ja" dir="ltr">
 <html>
   <head>
-  
     <title>掃除の事なら！サクラプランニング</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -42,7 +41,7 @@
         </ul>
       </li>
       <li><%= link_to('ご注文の流れ','/order/order_page')%></li>
-      <li><%= link_to('お問い合わせ','/contact/contact_page')%></li>
+      <li><%= link_to('お問い合わせ',new_contact_path)%></li>
       <li><%= link_to('会社概要','/overview/over_page')%></li>
       </ul>
       </nav>
@@ -60,7 +59,7 @@
       <li><%= link_to('ホーム',"/")%></li>
       <li><%= link_to('サービス',"/service/service_page")%></li>
       <li><%= link_to('ご注文の流れ','/order/order_page')%></li>
-      <li><%= link_to('お問い合わせ','/contact/contact_page')%></li>
+      <li><%= link_to('お問い合わせ',new_contact_path)%></li>
       <li><%= link_to('会社概要','/overview/over_page')%></li>
       </ul>
     </nav>
@@ -69,8 +68,10 @@
     <%= render_breadcrumbs separator: '>'%>
     </div>
   </header>
+    <% if flash[:notice] -%>
+      <p><%= flash[:notice] %></p>
+    <% end -%>
     <%= yield %>
-    </div>
     <footer>
       <div class="footer-body">
         <div class="footerTop">
