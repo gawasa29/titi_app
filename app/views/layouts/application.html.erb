@@ -2,17 +2,15 @@
 <html lang="ja" dir="ltr">
 <html>
   <head>
-  <!--meta_tagsを適用させる-->
-  <%= display_meta_tags(default_meta_tags) %>
+    <title>掃除の事なら！サクラプランニング</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-    <!--フォントウェイサムのURL-->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css"rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css"
+        rel="stylesheet">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
   </head>
   <body>
   <%= javascript_include_tag 'demo_js' %>
@@ -23,10 +21,10 @@
     <%= link_to image_tag('https://dotup.org/uploda/dotup.org2192107.png',class:"logo"), '/' %>
     <p class="headerTitle">あなたのお部屋も心も綺麗に。</p>
     <address class="headerContact"><span class="tell">072-432-2212</span>
+    <br>受付時間:AM0:00〜PM23:59</address>
   </div>
     <nav class="header-menu">
     <ul class="menu">
-    <!--フォントウェイサムでのURL化-->
       <li><%= link_to "/" do %>
         <i class="fas fa-home"></i> ホーム
       <% end %></li>
@@ -43,7 +41,7 @@
         </ul>
       </li>
       <li><%= link_to('ご注文の流れ','/order/order_page')%></li>
-      <li><%= link_to('お問い合わせ','/contact/contact_page')%></li>
+      <li><%= link_to('お問い合わせ',new_contact_path)%></li>
       <li><%= link_to('会社概要','/overview/over_page')%></li>
       </ul>
       </nav>
@@ -51,7 +49,7 @@
         <!--tablet-->
     <div class="tablet">
     <div class="headerTop">
-    <%= link_to image_tag('https://dotup.org/uploda/dotup.org2192111.png',class:"logo"), '/' %>
+    <%= link_to image_tag('logomini2.png',class:"logo"), '/' %>
     </div>
     <div class="navToggle">
     <span></span><span></span><span></span>
@@ -61,24 +59,23 @@
       <li><%= link_to('ホーム',"/")%></li>
       <li><%= link_to('サービス',"/service/service_page")%></li>
       <li><%= link_to('ご注文の流れ','/order/order_page')%></li>
-      <li><%= link_to('お問い合わせ','/contact/contact_page')%></li>
+      <li><%= link_to('お問い合わせ',new_contact_path)%></li>
       <li><%= link_to('会社概要','/overview/over_page')%></li>
       </ul>
     </nav>
     </div>
     <div class="breadcrumb">
-
-    <!--パンクズ呼び出し-->
     <%= render_breadcrumbs separator: '>'%>
-
     </div>
   </header>
+    <% if flash[:notice] -%>
+      <p><%= flash[:notice] %></p>
+    <% end -%>
     <%= yield %>
-    </div>
     <footer>
       <div class="footer-body">
         <div class="footerTop">
-          <div class="txtTop"><%= link_to image_tag('https://dotup.org/uploda/dotup.org2192107.png',class:"logo"), '/' %></div>
+          <div class="txtTop"><%= link_to image_tag('https://dotup.org/uploda/dotup.org2192107.png.',class:"logo"), '/' %></div>
           <p class="txtBottom">ー　あなたのお部屋も心も綺麗に　ー</p>
         </div>
         <address class="footerAddress">072-432-2212</address>
@@ -98,6 +95,5 @@
         </div>
       </div>
     </footer>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   </body>
 </html>
