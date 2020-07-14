@@ -8,6 +8,6 @@ class MailSender < ApplicationMailer
   def inquiry(contact)
     @contact = contact
 
-    mail to: @contact.email
+    mail to: ""
   end
 end
